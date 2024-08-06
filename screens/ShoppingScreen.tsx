@@ -35,7 +35,7 @@ const ShoppingScreen = () => {
 
 
     const fetchProductsFromApi = async () => {
-        await fetch("http://fakestoreapi.com/products")
+        await fetch("https://fakestoreapi.com/products")
         .then((resp) => resp.json())
         .then((res) => {
             setProductList(res)
